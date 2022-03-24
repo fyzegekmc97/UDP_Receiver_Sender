@@ -1,0 +1,5 @@
+# ninja log v5
+371	430	1648136866979803937	UDP_Receiver_Sender	7b6d5ce3513aa4a3
+0	261	1648134656123877770	CMakeFiles/UDP_Receiver_Sender.dir/UDP_Sender.cpp.o	2f2140fc39d2fd08
+1	291	1648135638623271160	CMakeFiles/UDP_Receiver_Sender.dir/main.cpp.o	9b7168bfdd5d9469
+0	371	1648136866919803719	CMakeFiles/UDP_Receiver_Sender.dir/string_parser.cpp.o	724de69b24a66944

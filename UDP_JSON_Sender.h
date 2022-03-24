@@ -1,0 +1,14 @@
+//
+// Created by feyzi on 24.03.2022.
+//
+
+#ifndef UDP_RECEIVER_SENDER_UDP_JSON_SENDER_H
+#define UDP_RECEIVER_SENDER_UDP_JSON_SENDER_H
+
+
+class UDP_JSON_Sender {
+
+};
+
+
+#endif //UDP_RECEIVER_SENDER_UDP_JSON_SENDER_H

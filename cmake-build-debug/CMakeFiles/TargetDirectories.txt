@@ -1,0 +1,3 @@
+/home/feyzi/CLionProjects/UDP_Receiver_Sender/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/feyzi/CLionProjects/UDP_Receiver_Sender/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/feyzi/CLionProjects/UDP_Receiver_Sender/cmake-build-debug/CMakeFiles/UDP_Receiver_Sender.dir
