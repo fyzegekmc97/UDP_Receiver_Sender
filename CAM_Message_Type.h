@@ -8,6 +8,7 @@
 #pragma once
 #include <cstdint>
 #include <string>
+#include <vector>
 
 struct Altitude {
     int64_t altitude_value;

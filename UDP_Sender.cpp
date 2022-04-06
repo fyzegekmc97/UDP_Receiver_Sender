@@ -54,36 +54,29 @@ void UDP_Sender::start_sending()
     servaddr.sin_port = htons(receiver_port);
     servaddr.sin_addr.s_addr = inet_addr(receiver_ip_address);
 
-    int n, len;
-    int max_run_length = 1000 ;
-    int message_id = 1 ;
-    int protocol_version = 1 ;
-    int station_id = 15 ;
-    int generation_delta_time = 15 ;
-    int station_type = 2 ;
-    float heading = 155.0 ;
-    float speed = 100.0 ;
-    float drive_direction = 100.5 ;
-    float vehicle_length = 55.5 ;
-    float vehicle_width = 45.5 ;
-    float longitudinal_accelaration = 56.6 ;
-    float curvature = 50.0 ;
-    float yaw_rate = 56.1 ;
-    int vehicle_role = 1 ;
-    bool exterior_lights = true ;
+    int protocol_version = 2 ;
+    int message_id = 2 ;
+    int station_id = 1 ;
+    int generation_deltatime = 0 ;
+    int station_type = 5 ;
+    float latitude = 41.016351819999997 ;
+    float longitude = 28.944218469999999 ;
+    float altitude_value = 60.400390625 ;
+    int heading_value = 0 ;
+    int heading_confidence = 0 ;
+    int speed_value = 6479 ;
+    int vehicle_length_value = 48 ;
+    int vehicle_width = 18 ;
+    int longitudinal_acceleration = 27 ;
 
-    for(int i = 0 ; i < max_run_length ; i++)
+    for(int i = 0 ; i < 10000000 ; i++)
     {
-        message_id++ ;
-        speed-- ;
-        longitudinal_accelaration-- ;
-        message = std::to_string(message_id) + "," + std::to_string(protocol_version) + "," + std::to_string(station_id) + ","
-                + std::to_string(generation_delta_time) + "," + std::to_string(station_type) + "," + std::to_string(heading) +
-                "," + std::to_string(speed) + "," + std::to_string(drive_direction) + "," + std::to_string(vehicle_length) + ","
-                + std::to_string(vehicle_width) + "," + std::to_string(longitudinal_accelaration) + "," + std::to_string(curvature) + ","
-                + std::to_string(yaw_rate) + "" + "," + "" + "," + "" + "," + "" + "," + "" + "," + "" + "," + ""  + std::to_string(vehicle_role) +
-                "," + std::to_string(exterior_lights);
-        std::cout << message.length() << " " ;
+
+        message = std::to_string(protocol_version) + "," + std::to_string(message_id) + "," + std::to_string(station_id) + "," +
+                std::to_string(generation_deltatime) + "," + std::to_string(station_type) + "," + std::to_string(latitude) + "," +
+                std::to_string(longitude) + "," + std::to_string(altitude_value) + "," + std::to_string(heading_value) + ","
+                + std::to_string(heading_confidence) + "," + std::to_string(speed_value) + "," + std::to_string(vehicle_length_value) +
+                std::to_string(vehicle_width) + std::to_string(longitudinal_acceleration);
 
         for(int k = 0 ; k < MAXLINE - message.length() ; k++)
         {
